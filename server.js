@@ -700,7 +700,7 @@ cron.schedule('55 23 * * *', async () => {
 });
 
 // Start Server
-app.listen(PORT, async () => {
+app.listen(PORT, '0.0.0.0', async () => {
   console.log(`Server listening on port ${PORT}`);
   console.log(`Access Portal: http://localhost:${PORT}`);
   
